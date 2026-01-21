@@ -12,6 +12,7 @@ section{
 #about{
     text-align: center;
     background-color: rgb(130, 195, 152);
+    line-height: 1.8;
 }
 #experience{
     background-color: rgb(255, 255, 255);
@@ -54,4 +55,17 @@ nav li a{
     background-color: rgb(224, 187, 219);
     padding : 30px;
     margin: 0 20px; 
+}
+h1 {
+    font-size: 3rem;          
+    font-weight: 700;          
+    color: rgb(47, 108, 128);  
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(47, 108, 128);
+    margin-bottom: 15px;
 }
