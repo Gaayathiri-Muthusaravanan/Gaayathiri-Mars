@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(219, 213, 188);
+    color: rgb(14, 14, 14);
+    font-family: 'Lugrasimo', cursive;
+    padding :80px;
+}
+section{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#about{
+    text-align: center;
+    background-color: rgb(130, 195, 152);
+    line-height: 1.8;
+}
+#experience{
+    background-color: rgb(255, 255, 255);
+}
+#connect{
+    background-color: rgb(154, 201, 207);
+}
+#profile{
+    background-color: rgb(255, 255, 255);
+    color: rgb(101, 120, 96);
+    padding : 50px;
+    text-align: center;
+}
+#outerContainer{
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+}
+nav ul {
+    list-style: none;      
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline-block; 
+    border-radius: 10px;
+    background-color: rgb(47, 108, 128);
+    padding: 10px;
+    margin: 0 20px;   
+        
+}
+nav li a{
+    text-decoration: none;
+    color: white; 
+}
+#experience li{
+    display: inline-block; 
+    
+    border-radius: 10px;
+    background-color: rgb(224, 187, 219);
+    padding : 30px;
+    margin: 0 20px; 
+}
+h1 {
+    font-size: 3rem;          
+    font-weight: 700;          
+    color: rgb(47, 108, 128);  
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(47, 108, 128);
+    margin-bottom: 15px;
+}
