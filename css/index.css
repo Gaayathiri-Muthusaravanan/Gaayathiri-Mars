@@ -51,7 +51,7 @@ section{
     margin: 0 20px; 
 }
 #skills{
-    display: grid;
+    display: flex;
     
 }
 .skillList li{
@@ -91,13 +91,12 @@ nav{
     color: rgb(255, 255, 255);
 }
 #columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    line-height: 2.0;
+    display: flex;       
+    gap: 20px;   
 }
 
 .column {
+     flex: 1;             
     background-color: #f7f9fb;
     border-radius: 8px;
     padding: 10px;
