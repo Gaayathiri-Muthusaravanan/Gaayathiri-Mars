@@ -42,7 +42,6 @@ nav li {
     background-color: rgb(47, 108, 128);
     padding: 10px;
     margin: 0 20px;   
-        
 }
 nav li a{
     text-decoration: none;
@@ -62,7 +61,6 @@ h1 {
     color: rgb(47, 108, 128);  
     margin-bottom: 20px;
 }
-
 h2 {
     font-size: 2rem;
     font-weight: 600;
