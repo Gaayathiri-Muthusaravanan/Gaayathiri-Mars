@@ -2,63 +2,64 @@ body{
     background-color: rgb(219, 213, 188);
     color: rgb(14, 14, 14);
     font-family: 'Lugrasimo', cursive;
-    padding :80px;
+    margin: 0;
 }
 section{
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
 }
 #about{
     text-align: center;
-    background-color: rgb(130, 195, 152);
-    line-height: 1.8;
+    background-color: rgb(255, 255, 255);
+    line-height: 2.0;
 }
 #experience{
-    background-color: rgb(255, 255, 255);
+   background-color: rgb(154, 201, 207);
 }
 #connect{
     background-color: rgb(154, 201, 207);
 }
-#profile{
+#skills{
     background-color: rgb(255, 255, 255);
+}
+#projects{
+    background-color: rgb(170, 198, 179);
+}
+#profile{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(170, 198, 179);
     color: rgb(101, 120, 96);
     padding : 50px;
     text-align: center;
+    
 }
 #outerContainer{
-    max-width: 900px;
-    margin: auto;
-    border-radius: 10px;
+    width: 80%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd; 
 }
-nav ul {
-    list-style: none;      
-    padding: 0;
-    margin: 0;
-}
-nav li {
-    display: inline-block; 
-    border-radius: 10px;
-    background-color: rgb(47, 108, 128);
-    padding: 10px;
-    margin: 0 20px;   
-        
-}
-nav li a{
-    text-decoration: none;
-    color: white; 
-}
+
 #experience li{
-    display: inline-block; 
-    
+    display: flex;
+    justify-content: space-between;
     border-radius: 10px;
-    background-color: rgb(224, 187, 219);
+    background-color: rgb(184, 217, 224);
     padding : 30px;
     margin: 0 20px; 
 }
+#skills{
+    display: flex;
+    
+}
+.skillList li{
+    text-decoration: none;
+}
 h1 {
-    font-size: 3rem;          
-    font-weight: 700;          
+    font-size: 2rem;          
+    font-weight: 100;          
     color: rgb(47, 108, 128);  
     margin-bottom: 20px;
 }
@@ -68,4 +69,52 @@ h2 {
     font-weight: 600;
     color: rgb(47, 108, 128);
     margin-bottom: 15px;
+}
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+ 
+    justify-content: space-around;
+    list-style: none;
+}
+nav{
+    position: sticky;
+    top: 60px;
+    background-color:#2c3e50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 5px;
+   
+}
+.navlist{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#columns {
+    display: flex;       
+    gap: 20px;   
+}
+
+.column {
+     flex: 1;             
+    background-color: #f7f9fb;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.column > h4 {
+    font-weight: bold;
+    color: rgb(58, 96, 126);
+    margin-bottom: 10px;
+}
+.social-link{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.icon {
+    width: 60px; 
+    height: 60px;
 }
