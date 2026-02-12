@@ -56,13 +56,13 @@ section{
     margin: 0 20px; 
 }
 
-.skillList{
+.skillsList{
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
     
 }
-.skillList li{
+.skillsList li{
     padding: 10px;
 }
 h1 {
@@ -143,7 +143,7 @@ nav{
    nav{
         background-color: rgb(83, 110, 83);
    }
-   .skillList li{
+   .skillsList li{
         padding: 40px;
         margin: 20px;
         background-color: #93acaa;
@@ -167,7 +167,7 @@ nav{
    nav{
         background-color:#1b6f68;
    }
-   .skillList li{
+   .skillsList li{
         padding: 15px;
         margin: 20px;
         background-color: rgb(167, 143, 165);
