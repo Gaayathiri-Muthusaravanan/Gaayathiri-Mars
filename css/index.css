@@ -1,8 +1,12 @@
+/* Desktop Style */
 body{
     background-color: rgb(219, 213, 188);
     color: rgb(14, 14, 14);
     font-family: 'Lugrasimo', cursive;
     margin: 0;
+}
+p{
+    line-height: 3;
 }
 section{
     padding: 20px;
@@ -43,19 +47,23 @@ section{
 }
 
 #experience li{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
     border-radius: 10px;
     background-color: rgb(184, 217, 224);
     padding : 30px;
     margin: 0 20px; 
 }
-#skills{
-    display: flex;
+
+.skillList{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     
 }
 .skillList li{
-    text-decoration: none;
+    padding: 10px;
 }
 h1 {
     font-size: 2rem;          
@@ -117,4 +125,51 @@ nav{
 .icon {
     width: 60px; 
     height: 60px;
+}
+
+/*Tablet Style */
+
+@media(max-width: 760px){
+   h1{
+        font-size: 1.8rem;          
+        font-weight: 400;  
+        color: #2c3e50;        
+        
+   }
+   p{
+        font-size: small;
+        line-height: 2.5;
+   }
+   nav{
+        background-color: rgb(83, 110, 83);
+   }
+   .skillList li{
+        padding: 40px;
+        margin: 20px;
+        background-color: #93acaa;
+   }
+}
+/* Mobile style*/
+@media(max-width: 480px){
+   h1{
+        font-size: 1.2rem;          
+        font-weight: 200;  
+        color: #285229;        
+        
+   }
+   h2{
+    font-size: 1.2rem;
+   }
+   p{
+        font-size:x-small;
+        line-height: 2.5;
+   }
+   nav{
+        background-color:#1b6f68;
+   }
+   .skillList li{
+        padding: 15px;
+        margin: 20px;
+        background-color: rgb(167, 143, 165);
+   }
 }
