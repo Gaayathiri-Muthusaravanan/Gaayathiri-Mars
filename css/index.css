@@ -16,11 +16,11 @@ section{
     background-color: rgb(255, 255, 255);
     line-height: 2.0;
 }
-#experience{
+#experience,#message{
    background-color: rgb(154, 201, 207);
 }
-#connect{
-    background-color: rgb(154, 201, 207);
+#connect,#messages{
+    background-color: rgb(255, 255, 255);
 }
 #skills{
     background-color: rgb(255, 255, 255);
@@ -73,14 +73,14 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 100;
     color: rgb(47, 108, 128);
     margin-bottom: 15px;
 }
 .nav-menu{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
  
     justify-content: space-around;
     list-style: none;
@@ -125,6 +125,52 @@ nav{
 .icon {
     width: 60px; 
     height: 60px;
+}
+.messageInput{
+     width: 500px;
+    border-radius: 2px;
+    border: none;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+#messageSubmitButton {
+    background-color: #34713a;
+    color: white;
+    
+    
+}
+#messageTextArea{
+    height: 100px;
+}
+#removeButton{
+    background-color: #8c2c2c;
+    color: white;
+    width: 70px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    margin-right: 20px;
+}
+#editButton{
+    background-color: #345937;
+    color: white;
+    width: 70px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+}
+#userNameList{
+    
+    list-style: none;
+   
+    
+}
+#user-link{
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 20px;
+  color: #30537e;
+  text-decoration: none;
 }
 
 /*Tablet Style */
