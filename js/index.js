@@ -1,14 +1,14 @@
 const footer = document.getElementById("footer");
 const container = document.querySelector(".container");
 footer.style.textAlign="center";
-footer.style.backgroundColor="#2c3e50";
+footer.style.backgroundColor="#000000";
 footer.style.color="white";
 footer.style.padding = "20px";
 footer.innerHTML = "Copyrights";
 const today = new Date();
 const thisYear = today.getFullYear();
 footer.innerHTML = `&copy; Gaayathiri Muthusaravanan ${thisYear} — All rights reserved.`;
-const skills = ["Java", "JavaScript", "HTML", "CSS", "Github"];
+const skills = ["Java", "JavaScript", "HTML", "CSS", "Github", "MySql"];
 const skillsSection = document.getElementById("skills");
 const skillsList = document.querySelector(".skillsList");
 for(let i=0; i<skills.length; i++){
@@ -69,3 +69,21 @@ messageForm.addEventListener("submit",function(event){
     const hr = document.createElement("hr");
     newMessage.appendChild(hr);
 })
+
+fetch("https://api.github.com/users/Gaayathiri-Muthusaravanan/repos")
+                .then(response=> response.json())
+                .then(data=>{
+                     const projectSection = document.getElementById("projects");
+                        const projectList = projectSection.querySelector("ul");
+                    data.forEach(repositories=>{
+                       let project = document.createElement("li");
+                       project.id = "project-li";
+                        project.innerHTML = `<strong>${repositories.name}</strong><br> ${repositories.description}`;
+                        
+                        projectList.appendChild(project);
+                    
+                        });
+                })
+                .catch(error =>console.log(error)
+                );
+
