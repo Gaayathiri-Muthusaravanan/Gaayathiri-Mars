@@ -31,13 +31,12 @@ messageForm.addEventListener("submit",function(event){
     const messageSection = document.getElementById("messages");
     const messageList = messageSection.querySelector("ul");
     const newMessage = document.createElement("li");
-    newMessage.id="userNameList";
+    newMessage.className="userNameList";
     newMessage.innerHTML = ` 
     <a href="mailto:${usersEmail}" id = "user-link">${usersName}</a> <br/>
-     <span>${usersMessage}</span><br/>
-    `;
+     <span>${usersMessage}</span><br/>`;
 
-    messageList.appendChild(newMessage);
+   
    //remove button
     const removeButton = document.createElement("button");
     removeButton.innerText = "remove";
@@ -78,7 +77,7 @@ fetch("https://api.github.com/users/Gaayathiri-Muthusaravanan/repos")
                     data.forEach(repositories=>{
                        let project = document.createElement("li");
                        project.id = "project-li";
-                        project.innerHTML = `<strong>${repositories.name}</strong><br> ${repositories.description}`;
+                        project.innerHTML = `<strong><a href = ${repositories.html_url}>${repositories.name}</a></strong><br> ${repositories.description}`;
                         
                         projectList.appendChild(project);
                     

@@ -3,6 +3,9 @@ body{
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
+h1{
+    font-size: large;
+}
 #profile{
     margin:0;
     padding: 0;
@@ -12,6 +15,7 @@ body{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     padding: 5px;
+    text-align: center;
     justify-content: space-around;
     list-style: none;
 }
@@ -46,7 +50,7 @@ section{
     padding: 20px;
 }
 h2{
-    font-size: x-large;
+    font-size: 1.2rem;
     font-weight: 500;
     color: gray;
     margin-bottom: 15px;
@@ -59,7 +63,7 @@ h2{
 }
 #aboutMe{
     background-color: rgb(255, 255, 255);
-    font-size: small;
+    font-size: 1rem;
     line-height: 2.8;
 }
 #profileContent{
@@ -100,7 +104,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 100vh;
+    min-height: 100vh;
 }
 .aboutMeLeftContainer{
     flex:1;
@@ -181,6 +185,7 @@ h2{
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     
 }
 .skillsList li{
@@ -189,7 +194,7 @@ h2{
     border: 1px #1F2937 solid;
     background-color:#1F2937;
     border-radius: 5px;
-    margin: 50px;
+   
     text-align: center;
     
 }
@@ -272,7 +277,7 @@ h2{
 #removeButton{
     background-color: #a56161;
     color: white;
-    width: 30%;
+   width:100px;
     border-radius: 4px;
     border: none;
     padding: 10px;
@@ -281,7 +286,7 @@ h2{
 #editButton{
     background-color: #658768;
     color: white;
-    width: 30%;
+   width:100px;
     border-radius: 4px;
     border: none;
     padding: 10px;
@@ -302,19 +307,41 @@ h2{
 
 /*Tablet Style */
 
-@media(max-width: 760px){
+@media only screen and (max-width: 768px){
+.nav-menu{
+    display: block;
+   
+    padding: 5px;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+}
+nav{
+    background-color: blue;
+}
+
+.nav-menu{
+    text-align: left;
+}
+.navlist{
+    font-size: 1.5rem;
+}
+
+    h1{
+        font-size: 2rem;
+    }
    h2{
-        font-size: 1.8rem;          
+        font-size: 1.5rem;         
         font-weight: 400;  
         color: #2c3e50;        
         
    }
    p{
-        font-size: small;
+        font-size: x-small;
         line-height: 2.5;
    }
    nav{
-        background-color: rgb(50, 50, 50);
+        background-color: rgb(80, 94, 131);
    }
    #logo{
         width: 40px;
@@ -330,36 +357,88 @@ h2{
         margin: 20px;
         background-color: #93acaa;
    }
+    .skillsList{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+   a{
+    font-size: xx-small;
+   }
+   #about{
+    margin-top: 40px;
+   }
  
 }
 /* Mobile style*/
 @media(max-width: 480px){
    h1{
         font-size: 1.2rem;          
-        font-weight: 200;  
-        color: #285229;        
+        font-weight: 700;  
+        color: #090909;        
         
+   }
+   .navlist{
+    font-size: 1rem;
    }
    h2{
     font-size: 1.2rem;
    }
+   #about
+   {
+    margin-top: 300px;
+   }
+   
    p{
         font-size:x-small;
         line-height: 2.5;
    }
-   nav{
-        background-color:#1b6f68;
+   .nav-left{
+        background-color:#5d7765;
    }
    nav{
     display: block;
+    background-color: white;
    }
    .nav-menu{
     display: block;
+    text-align: left;
     
    }
+   .navlist{
+     display:block;
+    color: rgb(0, 0, 0);
+   margin-top:20px;
+   }
+   .navlist:hover{
+        background-color: grey;
+    }
+    #contactButton{
+        background-color: rgb(180, 187, 200);
+        border:none;
+       
+        
+    }
+    .skillsList{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
    .skillsList li{
         padding: 15px;
         margin: 20px;
         background-color: rgb(167, 143, 165);
    }
+
+  #profileContent{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profileImg{
+    margin-top: 20px;
+    width: 200px;
+  }
+
+
 }
