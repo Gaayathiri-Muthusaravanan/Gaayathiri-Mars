@@ -6,32 +6,69 @@
     <meta name="description" content="Portfolio Project">
     <title>Gaayathiri Muthusaravanan Portfolio</title>
     <link rel ="stylesheet" href="./css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700;900&display=swap" rel="stylesheet">  
   </head>
   <body>
-    <div id = "outerContainer">
       <section id = "profile">
-      <h1>Gaayathiri Muthusaravanan</h1>
       <nav>
-      <ul class="nav-menu">
-        <li><a class="navlist" href="#about">About</a></li>
-        <li><a class="navlist" href="#experience">Experience</a></li>
-        <li><a class="navlist" href="#skills">Skills</a></li>
-        <li><a class="navlist" href="#projects">Projects</a></li>
-        <li><a class="navlist" href="#connect">Connect</a></li>
-        <li><a class="navlist" href="#message">Leave a Message</a></li>
-      </ul>
+        <div class = "nav-left">
+           <img id = "logo" src="images/logo.png" alt="logo">
+            <h4>Gaayathiri Muthusaravanan</h4>
+        </div>
+        <ul class="nav-menu">
+          <li><a class="navlist" href="#about">About</a></li>
+          <li><a class="navlist" href="#experience">Experience</a></li>
+          <li><a class="navlist" href="#skills">Skills</a></li>
+          <li><a class="navlist" href="#projects">Projects</a></li>
+          <li><a class="navlist" href="#connect">Connect</a></li>
+          <li><a class="navlist" href="#message">Leave a Message</a></li>
+        </ul>
       </nav>
+     
     </section>
     <section id = "about">
-      <h2>About</h2>
-      <p> Hi, I'm Gaayathiri — a computer science graduate with a passion for building things with code. 
-          While I've taken time to focus on my family, I've continued learning and exploring the world of web development.
-          I'm skilled in HTML, CSS, JavaScript, and Java, and I enjoy creating clean, functional websites and applications.
-          I'm now looking to grow as a software engineer by taking on real-world projects, collaborating with others, 
-          and constantly improving my skills. Whether it's solving problems or bringing creative ideas to life through code,
-          I'm excited about what's next on my journey in tech.
-      </p>
+      <div id="profileContent">
+        <div id = "profileInfo">
+          <h4>Hello, I'm Gaayathiri Muthusaravanan</h4>
+          <p id="profileTitle">Frontend Developer</p>
+          <p id="profileDesc">High level Expeerience in web design and development knowledge, producing quality work.</p>
+          <button id="contactButton"><a class="navlist" href="#connect">Contact me</a></button>
+        </div>
+        <img class ="profileImg" src="images/profile.png">
+      </div>
+      <div id = "aboutMe">
+      <h2>About me</h2>
+      <div class="aboutMeContainer">
+        <div class = "aboutMeLeftContainer">
+          <img class = "aboutImg" src="images/profile.png">
+        </div>
+        <div class = "aboutMeRightContainer">
+          <div class = "aboutMeColumnTop">
+            <div class ="aboutMeInfo">
+            <h4>Bio</h4>
+            <p> 
+              I'm a computer science graduate with a passion for building things with code.I enjoy creating clean, functional websites and applications.
+              I'm now looking to grow as a software engineer by taking on real-world projects, collaborating with others, 
+              and constantly improving my skills. Whether it's solving problems or bringing creative ideas to life through code,
+              I'm excited about what's next on my journey in tech.
+            </p>
+            </div>
+          </div>
+          
+            <div class ="aboutMeInfo" id = "aboutMeLeft">
+              <h4>Education</h4>
+              <p>Bachelor of Engineering in Computer Sceince</p>
+              <p>Anna University</p>
+              <p>2006-2010.</p>
+            </div>
+            <div class ="aboutMeInfo" id = "aboutMeRight">
+              <h4>Location</h4>
+              <p>Based in Atlanta, Georgia.</p>
+              <p>USA</p>
+            
+          </div>
+        </div>
+      </div>
     </section>
     <section id ="experience">
         <h2>Experience</h2>
@@ -90,7 +127,7 @@
     <section id = "footer">
       
     </section>
-    </div>
+    
     <script src = "js/index.js"></script>
   </body>
 </html>
